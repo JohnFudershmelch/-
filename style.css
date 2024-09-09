@@ -1,0 +1,43 @@
+
+
+*{
+    padding: 0px;
+}
+
+.catolog-title{
+    font-size: 36px;
+
+}
+
+.catolog-list{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+}
+
+.catolog-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    min-height: 100px;
+
+}
+@media (max-width:701px) {
+    .catolog-title{
+        font-size: 64px;
+    }
+    
+    .catolog-list{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+
+} 
+
+@media (max-width:401px) {
+    .catolog-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+} 
